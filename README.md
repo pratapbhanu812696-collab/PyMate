@@ -16,3 +16,13 @@ A Python chatbot that goes beyond simple keyword matching — uses **ML-based in
 - 🐳 **Dockerized** — Ready for containerized deployment.
 
 ## Architecture
+
+app.py                 → Streamlit UI layer ONLY (no business logic)
+handlers.py             → Core business logic (weather, shopping, GATE, routing)
+intent_classifier.py    → ML-based intent detection (TF-IDF + Cosine Similarity)
+database.py             → SQLite persistence layer
+tests/test_pymate.py    → Unit tests (pytest)
+Dockerfile              → Container definition
+
+
+
